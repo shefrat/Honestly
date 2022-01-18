@@ -1,14 +1,21 @@
 import React from 'react';
 import Carousel from '../components/Carousel/carousel';
+import Featurette from '../components/Featurette/Featurette';
 import Options from '../components/Options/options';
+
 const Homepage = () => {
     return (
-        <main>
+        <React.Fragment>
             <Carousel />
-            <div class="container marketing">
+            <div className="container marketing">
                 <Options />
+                <hr className="featurette-divider" />
+                <Featurette />
+                <hr className="featurette-divider" />
+                <Featurette />
+                <hr className="featurette-divider" />
             </div>
-        </main>
+        </React.Fragment>
      );
 }
  
